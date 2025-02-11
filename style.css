@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #e6dbf5; /* Soft lila arkaplan */
+    color: #3a2e5f; /* Koyu mor tonları */
+    text-align: center;
+    margin: 0;
+    padding: 20px; /* Kenarlardan biraz boşluk bırak */
+
+    background-image: url('img/BG.jpg');
+    background-size: contain;
+    background-position: center; /* Ortaya hizalansın */
+    background-repeat: repeat;
+    
+    /* Flexbox ile ekranın tam ortasına alma */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box; /* Padding dahil olsun */
+}
+
+/* Saydam renk eklemek için before elementi */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(94, 75, 119, 0.95); /* Siyah renk, %50 opaklık */
+    z-index: -1; /* Arka planda kalmasını sağla */
+}
+
+
+
+#intro-container, #game-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background: #d8c4f0; /* Açık lavanta tonu */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, );
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #913cff; /* Daha koyu mor */
+}
+
+p {
+    font-size: 18px;
+}
+
+#name-question{
+    color: rgb(224, 190, 255);
+    font-size: 45px;
+}
+
+button {
+    background: #9d5ae5; /* Orta ton mor */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background: #7d3ccf; /* Daha koyu mor */
+    transform: scale(1.05);
+}
+
+/* Küçük ekranlar için ekstra boşluk bırak */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 40px 20px; /* Telefonlarda ekstra boşluk */
+    }
+
+    #intro-container, #game-container {
+        width: 95%; /* Çok sıkışmasın */
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
