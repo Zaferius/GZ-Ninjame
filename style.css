@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
+html, body {
+    overflow: hidden; /* Scroll'u tamamen kapat */
+    height: 100vh; /* Sayfanın tamamını kapsasın */
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #e6dbf5; /* Soft lila arkaplan */
