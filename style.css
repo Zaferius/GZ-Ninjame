@@ -10,23 +10,24 @@ html, body {
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #e6dbf5; /* Soft lila arkaplan */
-    color: #3a2e5f; /* Koyu mor tonları */
+    background-color: #7ac3ff; /* Soft lila arkaplan */
+    color: #7145f7; /* Koyu mor tonları */
     text-align: center;
     margin: 0;
     padding: 20px; /* Kenarlardan biraz boşluk bırak */
 
-    background-image: url('img/BG2.jpg');
-    background-size: contain;
-    background-position: center; /* Ortaya hizalansın */
-    background-repeat: repeat;
-    
+
     /* Flexbox ile ekranın tam ortasına alma */
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     box-sizing: border-box; /* Padding dahil olsun */
+}
+
+#orange{
+    max-width: 200px;
+    animation: scaleAnimation 5s infinite ease-in-out;
 }
 
 /* Saydam renk eklemek için before elementi */
@@ -46,7 +47,7 @@ body {
 h1 {
     font-size: 30px;
     margin-bottom: 20px;
-    color: #913cff; /* Daha koyu mor */
+    color: #a058ff; /* Daha koyu mor */
 }
 
 p {
@@ -54,9 +55,22 @@ p {
 }
 
 #name-question{
-    color: rgb(224, 190, 255);
-    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    animation: waveAnimation 2s infinite ease-in-out;
+    text-shadow: -1px -3px 0 #37afff, 1px -3px 0 #36c6ff, -1px 3px 0 #2bdfff, 1px 3px 0 #25a8ff;
 }
+
+@keyframes waveAnimation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes scaleAnimation {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
 
 button {
     background: #9d5ae5; /* Orta ton mor */

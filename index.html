@@ -3,39 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninjame Seçme Sınavı</title>
+    <title>Goncam!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- İsim Girişi Ekranı -->
     <div id="name-container">
         <h1></h1>
-        <p id="name-question">Adınız?</p>
-        <input type="text" id="playerName" placeholder="Adınızı yazın">
-        <button onclick="checkName()">Devam ></button>
-        <p id="name-error" style="color: rgb(255, 118, 118); display: none;">Hey, bu sınav sana ait değil! Yürrrü!!</p>
+        <p id="name-question">Seni çok seviyorum!</p>
+        <img id="orange" src="img/blue_Orange.png" alt="Blue Orange" class="centered-img";>
     </div>
 
-    <!-- Giriş Ekranı (Başlangıçta Gizli) -->
-    <div id="intro-container" style="display: none;">
-        <h1>Ninjame Seviye Belirleme Sınavı</h1>
-        <p>Hoş geldiniz Gonca Hanım! Gölgeniz olarak sizi izlerken ne kadar güzel ve vahşi olduğunuzu görebiliyordum. Fakat bu denli çevik olduğunuzu bilmiyordum. </p>
-        <p>Eğer siz de isterseniz, Ninjame testine girmenizi öneririm!</p>
-        <p>- Koko The Kayısdağı Hükmedicisi </p>
-        <button onclick="startExam()">Başla</button>
-    </div>
-
-    <!-- Hikaye Ekranı (Başlangıçta Gizli) -->
-    <div id="game-container" style="display: none;">
-        <h1 id="game-title">Ninja Seçme Sınavı</h1>
-        <p id="story-text">Yoğun bir günün ardından Çekmeköy metro durağında inip eve minibüse binmeniz gerekirken, 
-            Dudulluda inip metro aktarması ile kayışdağında indiniz. (evet inanılmaz)</p>
-            <p id="story-question">Fark ettikten sonra ne yaparsınız?</p>
-        <div id="choices">
-            <button onclick="nextStory(1)">SAVAŞ ÇIĞLIĞI ATARAK CEBİMDEN BİNA TIRMANDIRICISI(?) ALETİMLE BİNALARIN ÜZERİNDEN UÇARAK EVİME DÖNERİM</button>
-            <button onclick="nextStory(2)">Metroya geri yürürüm</button>    
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
